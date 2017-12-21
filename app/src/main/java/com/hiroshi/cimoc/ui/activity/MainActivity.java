@@ -98,7 +98,7 @@ public class MainActivity extends BaseActivity implements MainView, NavigationVi
     @Override
     protected void initData() {
         mPresenter.loadLast();
-        checkUpdate();
+        //checkUpdate();
         if (!showAuthorNotice()) {
             showPermission();
         }
