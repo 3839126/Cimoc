@@ -24,13 +24,13 @@ import butterknife.OnClick;
 
 public class AboutActivity extends BackActivity implements AboutView {
 
-    @BindView(R.id.about_update_summary) TextView mUpdateText;
+//    @BindView(R.id.about_update_summary) TextView mUpdateText;
     @BindView(R.id.about_version_name) TextView mVersionName;
     @BindView(R.id.about_layout) View mLayoutView;
 
     private AboutPresenter mPresenter;
-    private boolean update = false;
-    private boolean checking = false;
+//    private boolean update = false;
+//    private boolean checking = false;
 
     @Override
     protected BasePresenter initPresenter() {
@@ -49,11 +49,11 @@ public class AboutActivity extends BackActivity implements AboutView {
         }
     }
 
-    @OnClick(R.id.about_support_btn) void onSupportClick() {
-//        ClipboardManager manager = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
-//        manager.setPrimaryClip(ClipData.newPlainText(null, getString(R.string.about_support_email)));
-//        showSnackbar(R.string.about_already_clip);
-    }
+//    @OnClick(R.id.about_support_btn) void onSupportClick() {
+////        ClipboardManager manager = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+////        manager.setPrimaryClip(ClipData.newPlainText(null, getString(R.string.about_support_email)));
+////        showSnackbar(R.string.about_already_clip);
+//    }
 
     @OnClick(R.id.about_resource_btn) void onResourceClick() {
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.about_resource_url)));
@@ -64,7 +64,7 @@ public class AboutActivity extends BackActivity implements AboutView {
         }
     }
 
-    @OnClick(R.id.about_update_btn) void onUpdateClick() {
+//    @OnClick(R.id.about_update_btn) void onUpdateClick() {
 //        if (update) {
 //            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.about_update_url)));
 //            try {
@@ -83,7 +83,7 @@ public class AboutActivity extends BackActivity implements AboutView {
 //                checking = false;
 //            }
 //        }
-    }
+//    }
 
     @Override
     public void onUpdateNone() {
