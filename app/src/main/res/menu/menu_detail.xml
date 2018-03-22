@@ -5,7 +5,7 @@
     <item android:id="@+id/detail_history"
         android:title="@string/detail_history"
         android:icon="@drawable/ic_history_white_24dp"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="never" />
     <item android:id="@+id/detail_download"
         android:title="@string/detail_download"
         android:icon="@drawable/ic_file_download_white_24dp"
@@ -15,11 +15,11 @@
         app:showAsAction="never" />
     <item android:id="@+id/detail_search_title"
         android:title="@string/detail_search_title"
-        app:showAsAction="never"/>
+        app:showAsAction="ifRoom"/>
     <item android:id="@+id/detail_search_author"
         android:title="@string/detail_search_author"
         app:showAsAction="never"/>
     <item android:id="@+id/detail_share_url"
         android:title="@string/detail_share_url"
-        app:showAsAction="never"/>
+        app:showAsAction="ifRoom"/>
 </menu>
