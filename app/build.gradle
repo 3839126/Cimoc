@@ -14,11 +14,6 @@ android {
         resConfigs "en", "zh"
     }
     splits {
-        density {
-            enable true
-            reset()
-            include "xhdpi", "xxhdpi", "hdpi"
-        }
         abi {
             enable true
             reset()
