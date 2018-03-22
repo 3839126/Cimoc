@@ -15,11 +15,17 @@
         app:showAsAction="never" />
     <item android:id="@+id/detail_search_title"
         android:title="@string/detail_search_title"
-        app:showAsAction="ifRoom"/>
+        android:icon="@drawable/ic_search_white_24dp"
+        app:showAsAction="always"/>
     <item android:id="@+id/detail_search_author"
         android:title="@string/detail_search_author"
         app:showAsAction="never"/>
     <item android:id="@+id/detail_share_url"
         android:title="@string/detail_share_url"
-        app:showAsAction="ifRoom"/>
+        android:icon="@drawable/ic_share_white_24dp"
+        app:showAsAction="always"/>
+    <item android:id="@+id/detail_disqus"
+        android:title="@string/detail_disqus"
+        android:icon="@drawable/ic_share_white_24dp"
+        app:showAsAction="always"/>
 </menu>
