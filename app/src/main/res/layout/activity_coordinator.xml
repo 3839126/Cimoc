@@ -29,7 +29,7 @@
             android:layout_marginRight="16dp"
             android:layout_gravity="bottom|end"
             android:visibility="invisible"
-            android:src="@drawable/ic_history_white_24dp"
+            android:src="@drawable/ic_history_white_18dp"
             app:layout_behavior="com.hiroshi.cimoc.ui.widget.ScrollAwareFABBehavior"/>
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/coordinator_action_button"

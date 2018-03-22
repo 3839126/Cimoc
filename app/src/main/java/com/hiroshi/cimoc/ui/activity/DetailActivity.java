@@ -266,6 +266,7 @@ public class DetailActivity extends CoordinatorActivity implements DetailView {
             int resId = comic.getFavorite() != null ? R.drawable.ic_favorite_white_24dp : R.drawable.ic_favorite_border_white_24dp;
             mActionButton.setImageResource(resId);
             mActionButton.setVisibility(View.VISIBLE);
+            mActionButton2.setVisibility(View.VISIBLE);
         }
     }
 
