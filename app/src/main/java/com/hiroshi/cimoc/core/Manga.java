@@ -45,6 +45,7 @@ public class Manga {
                     }
                     while (iterator.hasNext()) {
                         Comic comic = iterator.next();
+                        //todo: mark comic in databases
                         if (comic != null && (comic.getTitle().indexOf(keyword) != -1 || comic.getAuthor().indexOf(keyword) != -1)) {
                             subscriber.onNext(comic);
                             Thread.sleep(random.nextInt(200));
@@ -63,6 +64,8 @@ public class Manga {
             @Override
             public void call(Subscriber<? super List<Chapter>> subscriber) {
                 try {
+                    //todo: check databases here
+                    //todo: upload info
                     comic.setUrl(parser.getUrl(comic.getCid()));
                     Request request = parser.getInfoRequest(comic.getCid());
                     String html = getResponseBody(App.getHttpClient(), request);
@@ -94,6 +97,8 @@ public class Manga {
                     Request request = parser.getCategoryRequest(format, page);
                     String html = getResponseBody(App.getHttpClient(), request);
                     List<Comic> list = parser.parseCategory(html, page);
+                    //todo: check databases here
+                    //todo: if new upload last-cid to mlab
                     if (!list.isEmpty()) {
                         subscriber.onNext(list);
                         subscriber.onCompleted();
@@ -117,6 +122,8 @@ public class Manga {
                     Request request = parser.getImagesRequest(cid, path);
                     html = getResponseBody(App.getHttpClient(), request);
                     List<ImageUrl> list = parser.parseImages(html);
+                    //todo: check databases here
+                    //todo: upload img src
                     if (list.isEmpty()) {
                         throw new Exception();
                     } else {
