@@ -305,7 +305,7 @@ public class DM5 extends MangaParser {
 
     @Override
     public Headers getHeader() {
-        return Headers.of("Referer", "http://www.dm5.com");
+        return Headers.of("Referer", "http://m.dm5.com");
     }
 
 }
