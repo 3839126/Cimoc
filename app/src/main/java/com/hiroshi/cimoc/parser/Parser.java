@@ -131,7 +131,7 @@ public interface Parser {
      */
     Headers getHeader();
     Headers getHeader(String url);
-    Headers getHeader(ImageUrl url);
+    Headers getHeader(List<ImageUrl> list);
 
     /*
     * 设置当前漫画url，以便分享使用。

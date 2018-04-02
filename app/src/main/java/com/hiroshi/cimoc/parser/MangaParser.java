@@ -100,7 +100,7 @@ public abstract class MangaParser implements Parser {
     }
 
     @Override
-    public Headers getHeader(ImageUrl url){
+    public Headers getHeader(List<ImageUrl> list){
         return getHeader();
     }
 
