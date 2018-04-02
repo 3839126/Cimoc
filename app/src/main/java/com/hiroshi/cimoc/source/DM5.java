@@ -304,8 +304,9 @@ public class DM5 extends MangaParser {
     }
 
     @Override
-    public Headers getHeader() {
-        return Headers.of("Referer", "http://m.dm5.com");
+    public Headers getHeader(String url) {
+        String cid = "m".concat(StringUtils.match("cid=(\\d+)",url,1));
+        return Headers.of("Referer", "http://m.dm5.com/".concat(cid));
     }
 
 }
