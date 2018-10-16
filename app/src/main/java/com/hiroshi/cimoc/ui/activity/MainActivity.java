@@ -25,14 +25,14 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import com.auth0.android.Auth0;
-import com.auth0.android.authentication.AuthenticationAPIClient;
-import com.auth0.android.authentication.AuthenticationException;
-import com.auth0.android.callback.BaseCallback;
-import com.auth0.android.provider.AuthCallback;
-import com.auth0.android.provider.WebAuthProvider;
-import com.auth0.android.result.Credentials;
-import com.auth0.android.result.UserProfile;
+//import com.auth0.android.Auth0;
+//import com.auth0.android.authentication.AuthenticationAPIClient;
+//import com.auth0.android.authentication.AuthenticationException;
+//import com.auth0.android.callback.BaseCallback;
+//import com.auth0.android.provider.AuthCallback;
+//import com.auth0.android.provider.WebAuthProvider;
+//import com.auth0.android.result.Credentials;
+//import com.auth0.android.result.UserProfile;
 import com.facebook.drawee.interfaces.DraweeController;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.facebook.imagepipeline.common.ResizeOptions;
@@ -98,7 +98,7 @@ public class MainActivity extends BaseActivity implements MainView, NavigationVi
     private boolean night;
 
     //auth0
-    private Auth0 auth0;
+//    private Auth0 auth0;
 
     @Override
     protected BasePresenter initPresenter() {
@@ -217,8 +217,8 @@ public class MainActivity extends BaseActivity implements MainView, NavigationVi
     @Override
     protected void initUser() {
         //auth0
-        auth0 = new Auth0(this);
-        auth0.setOIDCConformant(true);
+//        auth0 = new Auth0(this);
+//        auth0.setOIDCConformant(true);
     }
 
     private void initDrawerToggle() {
